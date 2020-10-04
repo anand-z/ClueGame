@@ -1,20 +1,17 @@
+//@author: Chantal Wang, Anand Zorig
 package experiment;
 import java.util.*;
-
 
 public class TestBoardCell {
 	int row, column;
 	boolean room, occupied;
-	
+	public Set<TestBoardCell> getAdjList;
 	
 	public TestBoardCell(int row, int column) {
 		this.row = row;
 		this.column = column;
 	}
 	
-	public Set<TestBoardCell> getAdjList;
-
-
 	public boolean isRoom() {
 		return room;
 	}
