@@ -2,6 +2,10 @@
 package test;
 
 import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.Assert;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import experiment.*;
@@ -11,7 +15,7 @@ import java.util.*;
 public class BoardTestsExp {
 	TestBoard board; 
 	
-	@BeforeAll
+	@BeforeEach
 	public void setUp() {
 		board = new TestBoard(null, 0);
 	}
@@ -48,13 +52,6 @@ public class BoardTestsExp {
 	}
 	
 	@Test
-	public void testEmpty() {
-		//test an empty board for behavior
-		board = new TestBoard(null, 0);
-		//Currently board is already set to empty, ask what behavior we need to test
-	}
-	
-	@Test
 	public void testTargetsNormal() {
 		TestBoardCell cell = board.getCell(0, 0);
 		board.calcTargets(cell, 3);
@@ -70,7 +67,7 @@ public class BoardTestsExp {
 	}
 	
 	@Test
-	public void testTargetsMixed() {
+	public void testTargetsOccupied() {
 		board.getCell(0, 2).setOccupied(true); //test targeting on occupied cell
 		board.getCell(1, 2).setRoom(true);//test targeting on room
 		
