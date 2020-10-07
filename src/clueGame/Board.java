@@ -22,10 +22,12 @@ public class Board {
 		
 	}
 	
-	public Room getRoom(BoardCell c) {
+	public Room getRoom(char c) {
 		Room r = new Room(c);
 		return r;
 	}
+	
+	
 	
 	
 }

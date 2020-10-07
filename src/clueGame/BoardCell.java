@@ -6,7 +6,7 @@ import experiment.TestBoardCell;
 
 public class BoardCell {
 	int row, column;
-	boolean room, occupied, doorway;
+	boolean room, occupied, doorway, roomCenter, label;
 	public Set<TestBoardCell> getAdjList;
 	DoorDirection direction;
 	
@@ -40,4 +40,11 @@ public class BoardCell {
 		return direction;
 	}
 	
+	public boolean isRoomCenter() {
+		return this.roomCenter;
+	}
+	
+	public boolean isLabel() {
+		return this.label;
+	}
 }

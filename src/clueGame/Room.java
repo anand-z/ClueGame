@@ -2,9 +2,9 @@ package clueGame;
 
 public class Room {
 	String name = "";
-	BoardCell initial;
+	char initial;
 	
-	public Room(BoardCell _initial) {
+	public Room(char _initial) {
 		this.initial = _initial;
 	}
 	
