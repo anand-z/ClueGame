@@ -1,0 +1,13 @@
+// Rooms and Room Cards:
+Room, Captain America, C
+Room, Iron Man, I
+Room, Black Widow, B
+Room, Hulk, H
+Room, Thor, T
+Room, Captain Marvel, M
+Room, Kitchen, K
+Room, Meeting Room, R
+Room, Gym, G
+// Misc Spaces:
+Space, Unused, X
+Space, Walkway, W
