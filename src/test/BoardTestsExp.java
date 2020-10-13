@@ -24,28 +24,28 @@ public class BoardTestsExp {
 	public void testAdjacency() {
 		//Testing top left corner first
 		TestBoardCell cell = board.getCell(0, 0);
-		Set<TestBoardCell> testList = cell.getAdjList;
+		Set<TestBoardCell> testList = cell.getAdjList();
 		Assert.assertTrue(testList.contains(board.getCell(0, 1)));
 		Assert.assertTrue(testList.contains(board.getCell(1, 0)));
 		Assert.assertEquals(2, testList.size());
 
 		//testing bottom right corner
 		cell = board.getCell(3, 3);
-		testList = cell.getAdjList;
+		testList = cell.getAdjList();
 		Assert.assertTrue(testList.contains(board.getCell(3, 2)));
 		Assert.assertTrue(testList.contains(board.getCell(2, 3)));
 		Assert.assertEquals(2, testList.size());
 
 		//testing right edge
 		cell = board.getCell(0, 3);
-		testList = cell.getAdjList;
+		testList = cell.getAdjList();
 		Assert.assertTrue(testList.contains(board.getCell(0, 2)));
 		Assert.assertTrue(testList.contains(board.getCell(1, 3)));
 		Assert.assertEquals(2, testList.size());
 
 		//testing left edge
 		cell = board.getCell(3, 0);
-		testList = cell.getAdjList;
+		testList = cell.getAdjList();
 		Assert.assertTrue(testList.contains(board.getCell(2, 0)));
 		Assert.assertTrue(testList.contains(board.getCell(3, 1)));
 		Assert.assertEquals(2, testList.size());

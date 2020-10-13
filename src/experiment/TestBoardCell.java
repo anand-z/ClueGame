@@ -5,11 +5,20 @@ import java.util.*;
 public class TestBoardCell {
 	private int row, column;
 	private boolean room, occupied;
-	public Set<TestBoardCell> getAdjList;
+	public Set<TestBoardCell> adjList;
 	
 	public TestBoardCell(int row, int column) {
 		this.row = row;
 		this.column = column;
+		adjList = new HashSet<TestBoardCell>();
+	}
+	
+	public void addAdj(TestBoardCell cell) {
+		adjList.add(cell);
+	}
+	
+	public Set<TestBoardCell> getAdjList(){
+		return adjList;
 	}
 	
 	public boolean isRoom() {
