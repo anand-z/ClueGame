@@ -3,8 +3,8 @@ package experiment;
 import java.util.*;
 
 public class TestBoardCell {
-	int row, column;
-	boolean room, occupied;
+	private int row, column;
+	private boolean room, occupied;
 	public Set<TestBoardCell> getAdjList;
 	
 	public TestBoardCell(int row, int column) {

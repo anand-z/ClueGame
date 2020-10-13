@@ -65,7 +65,7 @@ class FileInitTests {
 		@Test
 		public void unusedSpace() { //Determine if unused space is ahead
 			BoardCell cell = new BoardCell(0,10);
-			Room room = board.getRoom(); // <-- find the room and return it's name
+			Room room = board.getRoom('X'); // <-- find the room and return it's name
 			assertEquals( room.getName(), "Unused" );
 		}
 }
@@ -85,4 +85,4 @@ class FileInitTests {
 		
 		
 		
-}
+

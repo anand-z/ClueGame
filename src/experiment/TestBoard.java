@@ -4,9 +4,14 @@ import java.util.*;
 
 public class TestBoard {
 	
-	public Set<TestBoardCell> targets;
+	private Set<TestBoardCell> targets;
 	public TestBoardCell startCell;
 	public int pathlength;
+	private TestBoardCell[][] grid; 
+	private Set<TestBoardCell> visited;
+	final static int COLS = 4;
+	final static int ROWS = 4;
+	
 	
 	public TestBoard(TestBoardCell startCell, int pathlength){ // A constructor that sets up the board.
 		this.startCell = startCell;

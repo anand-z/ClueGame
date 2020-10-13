@@ -47,4 +47,9 @@ public class BoardCell {
 	public boolean isLabel() {
 		return this.label;
 	}
+
+	public char getSecretPassage() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 }

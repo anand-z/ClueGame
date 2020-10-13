@@ -27,6 +27,33 @@ public class Board {
 		return r;
 	}
 	
+	public Room getRoom(BoardCell cell) {
+		Room r = new Room(cell);
+		return r;
+	}
+	public void loadSetupConfig() {
+		// TODO Auto-generated method stub
+		
+	}
+	public void loadLayoutConfig() {
+		// TODO Auto-generated method stub
+		
+	}
+	public BoardCell getCell(int i, int j) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	public int getNumRows() {
+		int i= 0;
+		// TODO Auto-generated method stub
+		return i;
+	}
+	public int getNumColumns() {
+		// TODO Auto-generated method stub
+		int i= 0;
+		return i;
+	}
+	
 	
 	
 	
